@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Kumar — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Anurag<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up delay-1">
+                Hi, I'm <span class="gradient-text">Anurag Kumar</span>
+            </h1>
+            <h2 class="hero-subtitle animate-fade-up delay-2">
+                Full Stack Developer & UI/UX Designer
+            </h2>
+            <p class="hero-description animate-fade-up delay-3">
+                I craft beautiful, performant digital experiences that make the web a better place. 
+                Passionate about clean code, modern design, and innovation.
+            </p>
+            <div class="hero-buttons animate-fade-up delay-4">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                </a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="hero-socials animate-fade-up delay-5">
+                <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/cdt-anuragkumar/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/cdt_anuragkumar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="mailto:cdt.anuragkumar@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Get to Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-animate="slide-right">
+                    <div class="image-wrapper">
+                        <div class="image-border"></div>
+                        <img src="profile photo.png" alt="Anurag Kumar's Profile" class="profile-img">
+                        <div class="image-dots"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-image" data-animate="slide-left">
+                    <h3 class="about-heading">A passionate developer based in India 🇮🇳</h3>
+                    <p class="about-text">
+                        I'm a Full Stack Developer with 5+ years of experience building web applications 
+                        and digital products. I specialize in creating elegant solutions that combine 
+                        beautiful design with robust engineering. When I'm not coding, you'll find me 
+                        exploring new technologies, contributing to open source, or writing about tech.
+                    </p>
+                    <p class="about-text">
+                        My approach combines attention to detail with big-picture thinking, ensuring every 
+                        project I touch delivers real value and an outstanding user experience.
+                    </p>
+                    <div class="skills-container">
+                        <h4 class="skills-title">Tech Stack</h4>
+                        <div class="skills-grid">
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">TypeScript</span>
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Next.js</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">MongoDB</span>
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">AWS</span>
+                            <span class="skill-badge">Figma</span>
+                            <span class="skill-badge">Git</span>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="30">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Open Source</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">What I Offer</span>
+                <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="zoom">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Building responsive, high-performance web applications using modern frameworks 
+                        and best practices. From SPAs to full-stack solutions.
+                    </p>
+                    <div class="service-tools">
+                        <span>React</span><span>Next.js</span><span>Node.js</span>
+                    </div>
+                </div>
+                <div class="service-card" data-animate="zoom">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">
+                        Creating intuitive, beautiful interfaces that delight users. Wireframing, 
+                        prototyping, and design systems that scale.
+                    </p>
+                    <div class="service-tools">
+                        <span>Figma</span><span>Adobe XD</span><span>Sketch</span>
+                    </div>
+                </div>
+                <div class="service-card" data-animate="zoom">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Mobile Development</h3>
+                    <p class="service-description">
+                        Cross-platform mobile apps with native-like performance. 
+                        Seamless experiences across iOS and Android.
+                    </p>
+                    <div class="service-tools">
+                        <span>React Native</span><span>Flutter</span><span>Expo</span>
+                    </div>
+                </div>
+                <div class="service-card" data-animate="zoom">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="service-title">Backend & APIs</h3>
+                    <p class="service-description">
+                        Scalable server architectures, RESTful APIs, and microservices. 
+                        Database design and cloud infrastructure.
+                    </p>
+                    <div class="service-tools">
+                        <span>Express</span><span>Python</span><span>AWS</span>
+                    </div>
+                </div>
+                <div class="service-card" data-animate="zoom">
+                    <div class="service-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3 class="service-title">SEO Optimization</h3>
+                    <p class="service-description">
+                        Boosting visibility with technical SEO, performance optimization, 
+                        and data-driven strategies for organic growth.
+                    </p>
+                    <div class="service-tools">
+                        <span>Analytics</span><span>Core Vitals</span><span>Schema</span>
+                    </div>
+                </div>
+                <div class="service-card" data-animate="zoom">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">DevOps & Security</h3>
+                    <p class="service-description">
+                        CI/CD pipelines, containerization, and security audits. 
+                        Ensuring your applications are safe and deployable.
+                    </p>
+                    <div class="service-tools">
+                        <span>Docker</span><span>GitHub Actions</span><span>Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">My Recent Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="project-card" data-animate="slide-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <span class="project-view">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution with real-time inventory, 
+                            payment processing, and an admin dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="project-card" data-animate="slide-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <span class="project-view">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Real-time data visualization dashboard with interactive charts, 
+                            filters, and exportable reports.
+                        </p>
+                        <div class="project-tags">
+                            <span>Next.js</span><span>D3.js</span><span>PostgreSQL</span><span>Chart.js</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="project-card" data-animate="slide-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=400&fit=crop" alt="Social Media App">
+                        <div class="project-overlay">
+                            <span class="project-view">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">
+                            A feature-rich social platform with real-time messaging, 
+                            stories, and content recommendation engine.
+                        </p>
+                        <div class="project-tags">
+                            <span>React Native</span><span>Firebase</span><span>Redux</span><span>Socket.io</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="project-card" data-animate="slide-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="AI Code Assistant">
+                        <div class="project-overlay">
+                            <span class="project-view">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI Code Assistant</h3>
+                        <p class="project-description">
+                            An intelligent code assistant powered by machine learning that 
+                            helps developers write better code faster.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span><span>TensorFlow</span><span>FastAPI</span><span>Docker</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 5 -->
+                <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="project-card" data-animate="slide-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="FinTech App">
+                        <div class="project-overlay">
+                            <span class="project-view">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">FinTech Payment App</h3>
+                        <p class="project-description">
+                            A secure payment processing app with multi-currency support, 
+                            budgeting tools, and financial insights.
+                        </p>
+                        <div class="project-tags">
+                            <span>TypeScript</span><span>NestJS</span><span>Redis</span><span>AWS</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 6 -->
+                <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="project-card" data-animate="slide-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" alt="Task Management">
+                        <div class="project-overlay">
+                            <span class="project-view">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Task Management System</h3>
+                        <p class="project-description">
+                            A collaborative project management tool with Kanban boards, 
+                            time tracking, and team analytics.
+                        </p>
+                        <div class="project-tags">
+                            <span>Vue.js</span><span>GraphQL</span><span>MongoDB</span><span>Docker</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="slide-right">
+                    <h3 class="contact-heading">Let's work together!</h3>
+                    <p class="contact-text">
+                        Have a project in mind or just want to say hello? Feel free to reach out.
+                        I'm always open to new opportunities and interesting conversations.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:cdt.anuragkumar@gmail.com" class="contact-value">cdt.anuragkumar@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+919934055509" class="contact-value">+91 9934055509</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/cdt-anuragkumar/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/cdt_anuragkumar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="mailto:cdt.anuragkumar@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" data-animate="slide-left" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder=" ">
+                        <label for="subject">Subject</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Anurag<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <div class="footer-socials">
+                    <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cdt-anuragkumar/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/cdt_anuragkumar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="mailto:cdt.anuragkumar@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="footer-divider"></div>
+                <p class="footer-copy">
+                    &copy; 2026 Anurag Kumar. All rights reserved. Built with <i class="fas fa-heart" style="color: #ef4444;"></i> and code.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- EmailJS SDK -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Kumar — Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=20260301">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Quicksand:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-ring"></div>
+        <span class="preloader-text">Loading</span>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div id="particles"></div>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-monogram">AK</span>
+                <span class="logo-text-stack">
+                    <span class="logo-name">Anurag Kumar</span>
+                    <span class="logo-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Chandigarh, India</span>
+                    </span>
+                </span>
+            </a>
+            <div class="nav-pill">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#resume" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-indicator" id="navIndicator"></div>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HOME / HERO ==================== -->
+    <section class="section hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient-orb hero-orb-1"></div>
+            <div class="hero-gradient-orb hero-orb-2"></div>
+            <div class="hero-gradient-orb hero-orb-3"></div>
+            <div class="hero-grid"></div>
+            <!-- Particle background is now global -->
+        </div>
+        <div class="container hero-content">
+            <div class="hero-left">
+                <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">
+                        <span class="hero-name-text" id="rolling-first">Anurag</span>
+                        <span class="hero-name-text" id="rolling-last">Kumar</span>
+                        <span class="hero-name-glow"></span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                    <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+                </p>
+                <p class="hero-desc" data-animate="fade-up" data-delay="300">
+                    Crafting beautiful, performant digital experiences with clean code, modern design, and cutting-edge technology.
+                </p>
+                <div class="hero-buttons" data-animate="fade-up" data-delay="400">
+                    <a href="https://drive.google.com/file/d/1sLqxJSLU-WankDd-qt1qBtQZnuo-hLYa/view?usp=sharing" class="btn btn-resume" target="blank" rel="noopener noreferrer">
+                        <span class="btn-resume-border"></span>
+                        <span class="btn-resume-bg"></span>
+                        <span class="btn-resume-text">Resume</span>
+                        <i class="fas fa-cloud-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="hero-socials" data-animate="fade-up" data-delay="500">
+                    <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cdt-anuragkumar/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/cdt_anuragkumar" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="mailto:cdt.anuragkumar@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/919934055509" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="hero-right" data-animate="fade-up" data-delay="300">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-particles"></div>
+                    <img src="profile photo.png" alt="Anurag Kumar" class="hero-photo" />
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-image-ring hero-image-ring-2"></div>
+                    <div class="hero-image-ring hero-image-ring-3"></div>
+                </div>
+            </div>
+            <div class="hero-tagline" data-animate="fade-up" data-delay="100">
+                <span>DESIGN</span>
+                <span class="tagline-dot"></span>
+                <span>DEVELOP</span>
+                <span class="tagline-dot"></span>
+                <span>DEPLOY</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <!-- Removed About Me box -->
+                <h2 class="section-title">Get to Know <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-animate="fade-left">
+                    <h3 class="about-heading">A passionate <span class="about-highlight">AI & ML</span> Engineer</h3>
+                    <p class="about-text">
+                        I’m an AI/ML-focused developer skilled in building intelligent systems, full-stack applications, and IoT solutions. With hackathon achievements and a patented innovation, I create impactful, efficient, and user-centered digital products.
+                    </p>
+                    <p class="about-text">
+                        Passionate about AI, web development, and real-world problem-solving. I blend clean engineering, modern tools, and creativity to build meaningful, high-performance solutions.
+                    </p>
+                    <div class="skills-section">
+                        <h4 class="skills-title">Tech Stack</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                    <!-- About stats removed for a cleaner about section -->
+                </div>
+                <div class="about-image" data-animate="fade-right">
+                    <div class="image-frame">
+                        <img src="profile photo.png" alt="Anurag Kumar" class="profile-img">
+                    </div>
+                    <div class="sports-badge" onclick="openSportsPopup()">
+                        <span class="exp-num"><i class="fas fa-futbol"></i></span>
+                        <span class="exp-label">Sports</span>
+                    </div>
+                    <div class="cert-badge" onclick="openCertPopup()">
+                        <span class="exp-num"><i class="fas fa-trophy"></i></span>
+                        <span class="exp-label">Certifications /<br>Achievements</span>
+                    </div>
+                    <div class="exp-badge" onclick="openResearchPopup()">
+                        <span class="exp-num">#</span>
+                        <span class="exp-label">Patents /<br>Research Papers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Popup Modal -->
+    <div class="research-overlay" id="researchOverlay" onclick="closeResearchPopup(event)">
+        <div class="research-popup">
+            <button class="research-popup-close" onclick="closeResearchPopup(event, true)">&times;</button>
+            <div class="research-tabs">
+                <button class="research-tab active" data-tab="patents" onclick="switchResearchTab('patents')">Patents</button>
+                <button class="research-tab" data-tab="papers" onclick="switchResearchTab('papers')">Research Papers</button>
+            </div>
+            <div class="research-content" id="researchContent">
+                <div class="research-panel active" id="panel-patents">
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-file-shield"></i></div>
+                        <div class="research-item-info">
+                            <h4>Automated Plant Watering System</h4>
+                            <p class="research-meta">Patent Filed &bull; 2023</p>
+                            <p class="research-desc">Invented and patented an IoT-based irrigation system for urban road dividers to improve water conservation
+                            Reduced manual watering time by 80% using moisture sensors, solenoid valves, and microcontrollers</p>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-file-shield"></i></div>
+                        <div class="research-item-info">
+                            <h4>Aero-Helix: Rapid Descent System</h4>
+                            <p class="research-meta">Patent Filed &bull; 2026</p>
+                            <p class="research-desc">A wearable helical exoskeleton designed for scuba and deep-water diving.Generates a controlled downward vortex to assist in rapid, stable underwater descent.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-panel" id="panel-papers">
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-scroll"></i></div>
+                        <div class="research-item-info">
+                            <h4>Leveraging Artificial Intelligence in Modern Defense:</h4>
+                            <p class="research-meta">Published &bull; 2025</p>
+                            <p class="research-desc">Integrating Generative AI, Cybersecurity, and
+                            Military Doctrine Transformation</p>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-scroll"></i></div>
+                        <div class="research-item-info">
+                            <h4>IoT-based Environmental Monitoring</h4>
+                            <p class="research-meta">Published &bull; 2023</p>
+                            <p class="research-desc">Design and implementation of a low-cost IoT sensor network for continuous environmental quality assessment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sports Popup Modal -->
+    <div class="research-overlay" id="sportsOverlay" onclick="closeSportsPopup(event)">
+        <div class="research-popup">
+            <button class="research-popup-close" onclick="closeSportsPopup(event, true)">&times;</button>
+            <div class="research-tabs">
+                <button class="research-tab active" data-tab="team" onclick="switchSportsTab('team')">Team Sports</button>
+                <button class="research-tab" data-tab="individual" onclick="switchSportsTab('individual')">Individual Sports</button>
+            </div>
+            <div class="research-content" id="sportsContent">
+                <div class="research-panel active" id="panel-team">
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-futbol"></i></div>
+                        <div class="research-item-info">
+                            <h4>Football</h4>
+                            <p class="research-meta">Team Sport &bull; Active</p>
+                            <p class="research-desc">An active football player, I have represented my team in five South Zone Football Championships and played for the Chittoor district (A.P.) at Andhra University.</p>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-futbol"></i></div>
+                        <div class="research-item-info">
+                            <h4>Football</h4>
+                            <p class="research-meta">Team Sport &bull; Active</p>
+                            <p class="research-desc">I represented my team in the Inter-Zonal Football Championship after winning the South Zone tournament.
+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-panel" id="panel-individual">
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-person-running"></i></div>
+                        <div class="research-item-info">
+                            <h4>Athletics</h4>
+                            <p class="research-meta">Track &amp; Field &bull; Active</p>
+                            <p class="research-desc">Long Jump and long-distance runner with participation in school-level competitions.</p>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-person-running"></i></div>
+                        <div class="research-item-info">
+                            <h4>X-country Running</h4>
+                            <p class="research-meta">Individual Sport &bull; Active</p>
+                            <p class="research-desc">Competitive cross-country runner in school and district-level competitions.(5 km in 17 mins)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications Popup Modal -->
+    <div class="research-overlay" id="certOverlay" onclick="closeCertPopup(event)">
+        <div class="research-popup">
+            <button class="research-popup-close" onclick="closeCertPopup(event, true)">&times;</button>
+            <div class="research-tabs">
+                <button class="research-tab active" data-tab="certs" onclick="switchCertTab('certs')">Certifications</button>
+                <button class="research-tab" data-tab="achievements" onclick="switchCertTab('achievements')">Achievements</button>
+            </div>
+            <div class="research-content" id="certContent">
+                <div class="research-panel active" id="panel-certs">
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="research-item-info">
+                            <h4>Generative AI Professional</h4>
+                            <p class="research-meta">Oracle &bull; June 2024</p>
+                            <p class="research-desc">Learned to build, fine-tune, and deploy AI solutions using Oracle’s AI services and best practices for responsible, efficient model usage.</p>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="research-item-info">
+                            <h4>Python for Data Science, AI & Development</h4>
+                            <p class="research-meta">IBM &bull; November,2023</p>
+                            <p class="research-desc">Learned core Python programming, data structures, and essential libraries like Pandas, NumPy, and Matplotlib for data analysis and visualization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-panel" id="panel-achievements">
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-award"></i></div>
+                        <div class="research-item-info">
+                            <h4>Finalist — VIHAAN 6.0</h4>
+                            <p class="research-meta">Delhi Technological University &bull; 2024</p>
+                            <p class="research-desc">Reached finals with an AI-powered waste classification project at Delhi Technological University's flagship hackathon.</p>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-item-icon"><i class="fas fa-award"></i></div>
+                        <div class="research-item-info">
+                            <h4>Finalist — HACKTIVATE 2K23</h4>
+                            <p class="research-meta">JIMS Noida &bull; 2023</p>
+                            <p class="research-desc">Built an urban automation solution and placed as finalist at JIMS Noida's annual hackathon competition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <!-- Removed My Recent Work box -->
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- E-Commerce Platform -->
+                <div class="project-card" data-animate="fade-up" data-delay="0">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="E-Commerce Platform" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://cpc-gold.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-view-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce with real-time inventory and payment processing.</p>
+                        <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span></div>
+                    </div>
+                </div>
+                <!-- Analytics Dashboard -->
+                <div class="project-card" data-animate="fade-up" data-delay="100">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics Dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/cdt-anuragkumar/analytics-dashboard" target="_blank" rel="noopener noreferrer" class="project-view-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time data visualization with interactive charts and reports.</p>
+                        <div class="project-tags"><span>Next.js</span><span>D3.js</span><span>PostgreSQL</span><span>Chart.js</span></div>
+                    </div>
+                </div>
+                <!-- Social Media App -->
+                <div class="project-card" data-animate="fade-up" data-delay="200">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=400&fit=crop" alt="Social Media App" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/cdt-anuragkumar/social-media-app" target="_blank" rel="noopener noreferrer" class="project-view-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media App</h3>
+                        <p>Feature-rich social platform with real-time messaging and content feeds.</p>
+                        <div class="project-tags"><span>React Native</span><span>Firebase</span><span>Redux</span><span>Socket.io</span></div>
+                    </div>
+                </div>
+                <!-- AI Code Assistant -->
+                <div class="project-card" data-animate="fade-up" data-delay="0">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="AI Code Assistant" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/cdt-anuragkumar/ai-code-assistant" target="_blank" rel="noopener noreferrer" class="project-view-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Code Assistant</h3>
+                        <p>Intelligent code assistant powered by ML for better developer productivity.</p>
+                        <div class="project-tags"><span>Python</span><span>TensorFlow</span><span>FastAPI</span><span>Docker</span></div>
+                    </div>
+                </div>
+                <!-- FinTech Payment App -->
+                <div class="project-card" data-animate="fade-up" data-delay="100">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="FinTech App" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/cdt-anuragkumar/fintech-payment-app" target="_blank" rel="noopener noreferrer" class="project-view-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FinTech Payment App</h3>
+                        <p>Secure payments with multi-currency support and financial insights.</p>
+                        <div class="project-tags"><span>TypeScript</span><span>NestJS</span><span>Redis</span><span>AWS</span></div>
+                    </div>
+                </div>
+                <!-- School Management System -->
+                <div class="project-card" data-animate="fade-up" data-delay="200">
+                    <div class="project-img">
+                        <img src="cpcms.png" alt="CPCMS School Management System Screenshot" loading="lazy" style="border-radius:16px; box-shadow:0 2px 16px rgba(168,85,247,0.12); margin-bottom:8px;">
+                        <div class="project-overlay">
+                            <a href="https://cpc-gold.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-view-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>School Management System</h3>
+                        <p>Collaborative project management with Kanban boards and team analytics.</p>
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>Javascript</span><span>MongoDB</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESUME ==================== -->
+    <section class="section" id="resume">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <!-- Removed My Journey box -->
+                <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-grid">
+                <div class="resume-col" data-animate="fade-right">
+                    <div class="resume-col-head">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <h4><b>IoT Developer – Automated Plant Watering System (Patent)</b></h4>
+                            <ul class="exp-list">
+                                <li>Invented and patented an IoT-based irrigation system for urban road dividers to improve water conservation</li>
+                                <li>Reduced manual watering time by 80% using moisture sensors, solenoid valves, and microcontrollers</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <h4><b>Team Lead – Hackathons and Technical Competitions</b></h4>
+                            <ul class="exp-list">
+                                <li><i class="fas fa-trophy exp-bullet"></i> Won IEEE CU Project Expo by creating a smart bike safety system; project demonstrated to 200+ visitors and praised for potential to reduce road accidents in school & hospital zones</li>
+                                <li><i class="fas fa-medal exp-bullet"></i> Ranked in top 5 out of 900+ teams at HACKFEST’23 (IIT Dhanbad) for a mental health tracking app</li>
+                                <li><i class="fas fa-award exp-bullet"></i> Finalist at VIHAAN 6.0 (DTU) and HACKTIVATE 2K23 (JIMS Noida) with projects in waste classification and urban automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-col" data-animate="fade-left">
+                    <div class="resume-col-head">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <h4>Chandigarh University</h4>
+                            <div class="tl-meta"><span class="tl-company">Mohali, Punjab</span><span class="tl-date">2022 — 2026</span></div>
+                            <p>Currently persuing Bachelor of Engineering in Computer Science and Engineering with specialization in Artificial Intelligence and Machine Learning.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <h4>Sainik School Kalikiri - Under Ministry of Defence</h4>
+                            <div class="tl-meta"><span class="tl-company">Tirupati, Andhra Pradesh</span><span class="tl-date">2020 — 2021</span></div>
+                            <p>Completed Intermediate studies. Developed strong discipline, leadership, and teamwork skills.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-dot"></div>
+                            <h4>Sainik School Kalikiri - Under Ministry of Defence</h4>
+                            <div class="tl-meta"><span class="tl-company">Tirupati, Andhra Pradesh</span><span class="tl-date">2019</span></div>
+                            <p>Matriculation. Built a solid academic foundation and a passion for continuous growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Removed Download Full Resume button -->
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header" style="padding-top: 0;" data-animate="fade-up">
+                <!-- Removed Get In Touch box -->
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-wrapper" data-animate="fade-up">
+                <div class="contact-wrapper-animated-bg">
+                    <div class="contact-orb orb1"></div>
+                    <div class="contact-orb orb2"></div>
+                    <div class="contact-orb orb3"></div>
+                </div>
+                <div class="contact-glow"></div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's build something <span class="gradient-text">amazing</span> together.</h3>
+                        <p>Got a project, idea, or just want to connect? Drop me a message and I'll get back to you within 24 hours.</p>
+                        <div class="contact-cards">
+                            <a href="mailto:cdt.anuragkumar@gmail.com" class="contact-card">
+                                <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="cc-text">
+                                    <span class="cc-label">Email</span>
+                                    <span class="cc-value">cdt.anuragkumar@gmail.com</span>
+                                </div>
+                                <i class="fas fa-arrow-right cc-arrow"></i>
+                            </a>
+                            <a href="tel:+919934055509" class="contact-card">
+                                <div class="cc-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="cc-text">
+                                    <span class="cc-label">Phone</span>
+                                    <span class="cc-value">+91 9934055509</span>
+                                </div>
+                                <i class="fas fa-arrow-right cc-arrow"></i>
+                            </a>
+                            <div class="contact-card">
+                                <div class="cc-icon cc-icon-pink"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="cc-text">
+                                    <span class="cc-label">Location</span>
+                                    <span class="cc-value">Chandigarh, India</span>
+                                </div>
+                            </div>
+                            <div class="contact-socials footer-socials">
+                                <a href="https://twitter.com/cdt_anuragkumar" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/cdt-anuragkumar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="mailto:cdt.anuragkumar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="https://wa.me/919934055509" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://github.com/cdt-anuragkumar" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                        <form class="contact-form" id="contact-form">
+                            <div id="formStatus" class="form-status"></div>
+                            <div class="form-header">
+                                <span class="form-header-dot"></span>
+                                <span class="form-header-text">Send a Message</span>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="from_name" required placeholder=" ">
+                                    <label for="from_name">Your Name</label>
+                                    <div class="form-line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="from_email" required placeholder=" ">
+                                    <label for="from_email">Your Email</label>
+                                    <div class="form-line"></div>
+                                </div>
+                            </div>
+                            <!-- Hidden fields for EmailJS template (ensure your template supports these or adjust names) -->
+                            <input type="hidden" name="to_email" id="to_email" value="cdt.anuragkumar@gmail.com">
+                            <input type="hidden" name="to_name" id="to_name" value="Anurag Kumar">
+                            <div class="form-group">
+                                <input type="text" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+        <footer class="footer-modern">
+            <div class="footer-main">
+                <div class="footer-socials">
+                    <a href="https://twitter.com/cdt-anuragkumar" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/cdt-anuragkumar/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:cdt.anuragkumar@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/919934055509" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/cdt-anuragkumar" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="footer-quote">"Success is when preparation meets opportunity"</div>
+                <div class="footer-copyright">&copy; 2026 Anurag Kumar. All rights reserved.</div>
+            </div>
+            <div class="neon-divider"></div>
+        </footer>
+    <!-- ==================== FOOTER ==================== -->
+    <script src="script.js"></script>
+
+    <!-- Scroll-to-Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
