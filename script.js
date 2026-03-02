@@ -177,6 +177,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelectorAll('[data-animate]').forEach(el => animObserver.observe(el));
 
+    /* ==================== ABOUT SECTION BACKGROUND LOGO ==================== */
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+        const aboutObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutSection.classList.add('in-view');
+                } else {
+                    aboutSection.classList.remove('in-view');
+                }
+            });
+        }, { threshold: 0.15 });
+        aboutObserver.observe(aboutSection);
+    }
+
     /* ==================== COUNT-UP ==================== */
     const countObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -474,11 +489,12 @@ function switchCertTab(tab) {
     }
 
     window.addEventListener('load', function() {
-        setTimeout(hidePreloader, 600);
+        // Let the full animation play then fade out
+        setTimeout(hidePreloader, 2800);
     });
 
-    // Fallback: hide after 3s max
-    setTimeout(hidePreloader, 3000);
+    // Fallback: hide after 5s max
+    setTimeout(hidePreloader, 5000);
 })();
 
 /* ==================== SCROLL-TO-TOP BUTTON ==================== */
