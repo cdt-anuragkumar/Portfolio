@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anurag Kumar — Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=20260301">
+    <link rel="stylesheet" href="style.css?v=20260302">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Quicksand:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,24 +17,36 @@
     <!-- Preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-bg-pulse"></div>
-        <div class="preloader-orbit">
-            <span class="orbit-dot"></span>
-            <span class="orbit-dot"></span>
-            <span class="orbit-dot"></span>
+        <!-- Cinematic split logo -->
+        <div class="preloader-cinematic">
+            <div class="logo-half logo-left">
+                <img src="AKlogo.png" alt="AK Left" />
+            </div>
+            <div class="logo-half logo-right">
+                <img src="AKlogo.png" alt="AK Right" />
+            </div>
+            <!-- Impact flash when halves join -->
+            <div class="logo-impact-flash"></div>
+            <!-- Particle burst on join -->
+            <div class="logo-particles">
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+                <span class="logo-particle"></span>
+            </div>
         </div>
-        <div class="preloader-orbit orbit-reverse">
-            <span class="orbit-dot"></span>
-            <span class="orbit-dot"></span>
-        </div>
-        <div class="preloader-glow-ring"></div>
-        <div class="preloader-glow-ring ring-2"></div>
-        <div class="preloader-glow-ring ring-3"></div>
+        <!-- Full logo revealed after join -->
         <div class="preloader-logo-wrapper">
             <img src="AKlogo.png" alt="AK Logo" class="preloader-logo" />
         </div>
-        <div class="preloader-shine"></div>
-        <div class="preloader-shine shine-vertical"></div>
-        <div class="preloader-text-reveal">AK</div>
     </div>
 
     <!-- Cursor Glow -->
@@ -605,6 +617,7 @@
     <!-- ==================== FOOTER ==================== -->
         <footer class="footer-modern">
             <div class="footer-main">
+                <img src="AKlogo.png" alt="AK Logo" class="footer-ak-logo" />
                 <div class="footer-socials">
                     <a href="https://twitter.com/cdt-anuragkumar" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/cdt-anuragkumar/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
